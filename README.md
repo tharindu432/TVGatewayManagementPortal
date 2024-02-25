@@ -31,21 +31,21 @@ cd tv-gateway-management
 
 ## Gateways
 
-GET `/api/gateways `: Get all gateways.
-GET `/api/gateways/{serialNumber}`: Get details of a specific gateway.
-POST `/api/gateways`: Add a new gateway.
-PUT `/api/gateways/{serialNumber}`: Update details of a specific gateway.
-PATCH `/api/gateways/{serialNumber}`: Partially update details of a specific gateway.
-DELETE `/api/gateways/{serialNumber}`: Delete a gateway.
+#### GET `/api/gateways `: Get all gateways.
+#### GET `/api/gateways/{serialNumber}`: Get details of a specific gateway.
+#### POST `/api/gateways`: Add a new gateway.
+#### PUT `/api/gateways/{serialNumber}`: Update details of a specific gateway.
+#### PATCH `/api/gateways/{serialNumber}`: Partially update details of a specific gateway.
+#### DELETE `/api/gateways/{serialNumber}`: Delete a gateway.
 
 
 ## Peripheral Devices
 
-GET `/api/gateways/{serialNumber}/devices` : Get all peripheral devices for a specific gateway.
-GET `/api/gateways/{serialNumber}/devices/{deviceUid}`: Get details of a specific peripheral device for a gateway.
-POST `/api/gateways/{serialNumber}/devices`: Add a new peripheral device to a gateway.
-PUT `/api/gateways/{serialNumber}/devices/{deviceUid}`: Update details of a specific peripheral device for a gateway.
-PATCH `/api/gateways/{serialNumber}/devices/{deviceUid}`: Partially update details of a specific peripheral device for a gateway.
-DELETE `/api/gateways/{serialNumber}/devices/{deviceUid}`: Delete a peripheral device from a gateway.
+#### GET `/api/gateways/{serialNumber}/devices` : Get all peripheral devices for a specific gateway.
+#### GET `/api/gateways/{serialNumber}/devices/{deviceUid}`: Get details of a specific peripheral device for a gateway.
+#### POST `/api/gateways/{serialNumber}/devices`: Add a new peripheral device to a gateway.
+#### PUT `/api/gateways/{serialNumber}/devices/{deviceUid}`: Update details of a specific peripheral device for a gateway.
+#### PATCH `/api/gateways/{serialNumber}/devices/{deviceUid}`: Partially update details of a specific peripheral device for a gateway.
+#### DELETE `/api/gateways/{serialNumber}/devices/{deviceUid}`: Delete a peripheral device from a gateway.
 
-## Happy Coding !
+## Happy Coding ☺
