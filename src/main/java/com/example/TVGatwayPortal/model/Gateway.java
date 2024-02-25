@@ -6,8 +6,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-
 
 
 import java.util.Set;
@@ -23,6 +21,47 @@ public class Gateway {
     @Size(max = 10, message = "No more than 10 peripheral devices allowed")
     private Set <PeripheralDevice> peripheralDevices; // Associated peripheral devices
 
-    // Constructors, getters, and setters
+    public Gateway(String serialNumber) {
+        this.serialNumber = serialNumber;
+        this.name = name;
+        this.ipAddress = ipAddress;
+        this.peripheralDevices = peripheralDevices;
+    }
+
+    public Gateway() {
+
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getIpAddress() {
+        return ipAddress;
+    }
+
+    public void setIpAddress(String ipAddress) {
+        this.ipAddress = ipAddress;
+    }
+
+    public Set<PeripheralDevice> getPeripheralDevices() {
+        return peripheralDevices;
+    }
+
+    public void setPeripheralDevices(Set<PeripheralDevice> peripheralDevices) {
+        this.peripheralDevices = peripheralDevices;
+    }
 }
 

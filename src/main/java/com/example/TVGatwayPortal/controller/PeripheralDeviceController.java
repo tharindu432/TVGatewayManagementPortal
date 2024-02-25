@@ -1,7 +1,7 @@
 package com.example.TVGatwayPortal.controller;
 
 import com.example.TVGatwayPortal.model.PeripheralDevice;
-import com.example.TVGatwayPortal.service.GatewayService;
+
 import com.example.TVGatwayPortal.service.PeripheralDeviceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
