@@ -6,6 +6,7 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "peripheral_device")
 public class PeripheralDevice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

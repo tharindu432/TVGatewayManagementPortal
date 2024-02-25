@@ -1,9 +1,6 @@
 package com.example.TVGatwayPortal.model;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
@@ -11,6 +8,7 @@ import jakarta.validation.constraints.Size;
 import java.util.Set;
 
 @Entity
+@Table(name = "gateway")
 public class Gateway {
     @Id
     private String serialNumber; // Unique serial number
@@ -21,11 +19,10 @@ public class Gateway {
     @Size(max = 10, message = "No more than 10 peripheral devices allowed")
     private Set <PeripheralDevice> peripheralDevices; // Associated peripheral devices
 
-    public Gateway(String serialNumber) {
-        this.serialNumber = serialNumber;
-        this.name = name;
-        this.ipAddress = ipAddress;
-        this.peripheralDevices = peripheralDevices;
+
+
+    public Gateway(String gatewaySerialNumber) {
+
     }
 
     public Gateway() {
